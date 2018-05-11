@@ -18,4 +18,4 @@
 
 ## 自然言語
 
-- Tfidf+fastTextで強い特徴になるが、fastTextに偏りがちなのでfraction強めにいれると良いらしい [[nerdtreeさんのツイート](https://twitter.com/nardtree/status/994579698553311233?s=12)]
+- Tfidf+fastTextで強い特徴になるが、fastTextに偏りがちなのでfraction強めにいれると良いらしい [[@nerdtreeさんのツイート](https://twitter.com/nardtree/status/994579698553311233?s=12)]
