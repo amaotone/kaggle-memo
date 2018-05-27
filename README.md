@@ -30,3 +30,9 @@
 
 - Tfidf+fastTextで強い特徴になるが、fastTextに偏りがちなのでfraction強めにいれると良いらしい [[@nerdtreeさんのツイート](https://twitter.com/nardtree/status/994579698553311233?s=12)]
 - fastTextをがっつりPCAなどで次元削減してTfidfと合わせる [[@nerdtreeさんのツイート](https://twitter.com/nardtree/status/995963496322945025)]
+
+## アンサンブル
+
+- 種類の違うモデルは出力のレンジが異なることがあるので、公平に扱う必要がある
+- Rankにしたり、何らかの分布に押し込めたあとaverageすると良いことがある
+- Stacking
