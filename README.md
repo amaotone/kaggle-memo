@@ -24,6 +24,11 @@
 - KFoldかStratifiedにするか？
 - Adversarial Validationは検討したか？
 
+## カテゴリ変数の取扱い
+
+- カテゴリの共起を取ってLDAする([Talkingdata 1st place solution](https://www.slideshare.net/TakanoriHayashi3/talkingdata-adtracking-fraud-detection-challenge-1st-place-solution))
+- Target-Encodingを考える
+
 ## 時系列
 
 ## 自然言語
