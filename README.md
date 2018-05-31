@@ -22,6 +22,13 @@
 - Target-Encodingを考える
 - Weight of Evidence ([資料](https://github.com/h2oai/h2o-meetups/blob/master/2017_11_29_Feature_Engineering/Feature%20Engineering.pdf))
 
+## Representation Learning
+
+- tSNE
+- [UMAP](https://github.com/lmcinnes/umap)
+- [Denoising AutoEncoders](https://www.kaggle.com/c/porto-seguro-safe-driver-prediction/discussion/44629#250927)
+  - 値をその列の他の値と入れ替えるinputSwapNoiseを加える
+
 ## 時系列
 
 ## 自然言語
@@ -34,3 +41,8 @@
 - 種類の違うモデルは出力のレンジが異なることがあるので、公平に扱う必要がある
 - Rankにしたり、何らかの分布に押し込めたあとaverageすると良いことがある
 - Stacking
+
+## Deep Learning
+
+- 連続変数をGaussRankで処理
+
