@@ -13,7 +13,9 @@
 
 ## バリデーション
 
-- KFoldかStratifiedにするか？
+- KFold or Stratified
+  - 多クラス分類ならstratified必須
+  - 回帰でも1変数k-meansしてstratifiedにすることも
 - Adversarial Validationは検討したか？
 
 ## カテゴリ変数の取扱い
@@ -21,6 +23,11 @@
 - カテゴリの共起を取ってLDAする([Talkingdata 1st place solution](https://www.slideshare.net/TakanoriHayashi3/talkingdata-adtracking-fraud-detection-challenge-1st-place-solution))
 - Target-Encodingを考える
 - Weight of Evidence ([資料](https://github.com/h2oai/h2o-meetups/blob/master/2017_11_29_Feature_Engineering/Feature%20Engineering.pdf))
+
+## 欠損の処理
+
+- [Fancy Impute](https://github.com/iskandr/fancyimpute)
+- [MIDAS](https://github.com/Oracen/MIDAS)
 
 ## Representation Learning
 
