@@ -65,6 +65,7 @@
 
 - [0, 1]のregressionならbinary-crossentropyで学習するのもあり (ynktkさん)
 - 連続変数をGaussRankで処理
+- 徐々に`batch_size`を大きくしていく ([Mercari 1st](https://www.kaggle.com/c/mercari-price-suggestion-challenge/discussion/50256))
 
 ## LightGBM
 
