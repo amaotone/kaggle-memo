@@ -45,7 +45,8 @@
 
 ## 画像
 
-- imagemagickのidentify --verboseで統計量が出る(tkmさん)
+- imagemagickのidentify --verboseで統計量が出る (tkmさん)
+- 画像の動きが欲しい場合はOpenCVのoptical flowを取る (osciiartさん)
 
 ## 自然言語
 
@@ -62,9 +63,9 @@
 
 ## Deep Learning
 
-- [0, 1]のregressionならbinary-crossentropyで学習するのもあり(ynktkさん)
+- [0, 1]のregressionならbinary-crossentropyで学習するのもあり (ynktkさん)
 - 連続変数をGaussRankで処理
 
 ## LightGBM
 
-- `num_leaves`多め、`feature_fraction`かなり小さめ、とかもあり([Avito 4th](https://www.kaggle.com/c/avito-demand-prediction/discussion/59881))
+- `num_leaves`多め、`feature_fraction`かなり小さめ、とかもあり ([Avito 4th](https://www.kaggle.com/c/avito-demand-prediction/discussion/59881))
