@@ -67,4 +67,4 @@
 
 ## LightGBM
 
-- `num_leaves`多め、`feature_fraction`かなり小さめ、とかもあり
+- `num_leaves`多め、`feature_fraction`かなり小さめ、とかもあり([Avito 4th](https://www.kaggle.com/c/avito-demand-prediction/discussion/59881))
