@@ -28,6 +28,7 @@
 - Target-Encodingを考える
 - Weight of Evidence ([資料](https://github.com/h2oai/h2o-meetups/blob/master/2017_11_29_Feature_Engineering/Feature%20Engineering.pdf))
 - NNのEmbedding Layerに突っ込む
+- カテゴリの表記ゆれなどがある場合はn-gramを取るなどして表記揺れをなくすとよい
 
 ## 欠損の処理
 
