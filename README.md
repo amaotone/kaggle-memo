@@ -73,3 +73,4 @@
 ## LightGBM
 
 - `num_leaves`多め、`feature_fraction`かなり小さめ、とかもあり ([Avito 4th](https://www.kaggle.com/c/avito-demand-prediction/discussion/59881))
+- `feature_fraction = sqrt(n_features)/n_features` 程度だと特徴量数の影響を受けづらく、良い。
