@@ -87,6 +87,11 @@
 - `num_leaves`多め、`feature_fraction`かなり小さめ、とかもあり ([Avito 4th](https://www.kaggle.com/c/avito-demand-prediction/discussion/59881))
 - `feature_fraction = sqrt(n_features)/n_features` 程度だと特徴量数の影響を受けづらく、良い
 
+## チームで動くときのノウハウ
+
+- slackでチームを作り、特徴量・モデル・メモ・精度などを簡単にシェアしておけるようにする
+- 今日使うサブミット数を毎朝slack botなどで聞いて調整する
+
 ## おまけ
 
 - (銅メダル圏内くらいのとき)終了直前で激強kernelが出現することがあるので、最終日は2サブミット残して7時に起床し、自分のsolutionとちゃちゃっとアンサンブルできる体制を整えておく。1サブ残しだと精神的にきついので、2サブ推奨
