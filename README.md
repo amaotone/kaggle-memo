@@ -44,34 +44,43 @@
 - [Denoising AutoEncoders](https://www.kaggle.com/c/porto-seguro-safe-driver-prediction/discussion/44629#250927)
   - 値をその列の他の値と入れ替えるinputSwapNoiseを加える
 
-## 時系列
-
-## 画像
-
-- imagemagickのidentify --verboseで統計量が出る (tkmさん)
-- 画像の動きが欲しい場合はOpenCVのoptical flowを取る (osciiartさん)
-
-## 自然言語
-
-- 商品カテゴリなどがいくつかのフィールドに分かれているときはすべてくっつけて文章として扱う
-- Tfidf+fastTextで強い特徴になるが、fastTextに偏りがちなのでfraction強めにいれると良いらしい ([nerdtreeさん](https://twitter.com/nardtree/status/994579698553311233?s=12))
-- fastTextをがっつりPCAなどで次元削減してTfidfと合わせる ([nerdtreeさん](https://twitter.com/nardtree/status/995963496322945025))
-
 ## アンサンブル
 
 - 種類の違うモデルは出力のレンジが異なることがあるので、公平に扱う必要がある
 - Rankにしたり、何らかの分布に押し込めたあとaverageすると良いことがある
 - Stacking
 - Quiz Blending ([pdf](https://www.netflixprize.com/assets/GrandPrize2009_BPC_BigChaos.pdf))
-- 特徴量をbaggingしたモデルを大量につくってアンサンブル(Home Credit Default Risk)
+- 特徴量をbaggingしたモデルを大量につくってアンサンブル(Home Credit Default Risk)\
 
-## Deep Learning
+## タスクの種類ごと
+
+### 時系列
+
+### 画像
+
+- imagemagickのidentify --verboseで統計量が出る (tkmさん)
+- 画像の動きが欲しい場合はOpenCVのoptical flowを取る (osciiartさん)
+
+### 自然言語
+
+- 商品カテゴリなどがいくつかのフィールドに分かれているときはすべてくっつけて文章として扱う
+- Tfidf+fastTextで強い特徴になるが、fastTextに偏りがちなのでfraction強めにいれると良いらしい ([nerdtreeさん](https://twitter.com/nardtree/status/994579698553311233?s=12))
+- fastTextをがっつりPCAなどで次元削減してTfidfと合わせる ([nerdtreeさん](https://twitter.com/nardtree/status/995963496322945025))
+
+## 手法ごと
+
+### Deep Learning
 
 - [0, 1]のregressionならbinary-crossentropyで学習するのもあり (ynktkさん)
 - 連続変数をGaussRankで処理
 - 徐々に`batch_size`を大きくしていく ([Mercari 1st](https://www.kaggle.com/c/mercari-price-suggestion-challenge/discussion/50256))
 
-## LightGBM
+### LightGBM
 
 - `num_leaves`多め、`feature_fraction`かなり小さめ、とかもあり ([Avito 4th](https://www.kaggle.com/c/avito-demand-prediction/discussion/59881))
 - `feature_fraction = sqrt(n_features)/n_features` 程度だと特徴量数の影響を受けづらく、良い。
+
+## おまけ
+
+- (銅メダル圏内くらいのとき)終了直前で激強kernelが出現することがあるので、最終日は2サブミット残して7時に起床し、自分のsolutionとちゃちゃっとアンサンブルできる体制を整えておく。1サブ残しだと精神的にきついので、2サブ推奨。
+- 2値分類のコンペではkernel-bestのどこかの行を0にしたやつと1にしたやつを提出すると、カーネルパクリ軍団を抜かせることがある。
