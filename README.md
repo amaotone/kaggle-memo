@@ -11,17 +11,18 @@
 - ヒストグラムにして満足してないか？
 - 意味のある順序にソートしてから眺める
 
-## 特徴量作成
-
-- ゼロかそれ以外か、0.5以上か、などの2値学習(tkmさん)
-- 予測値を特徴量に入れてもう一度学習する(Home Credit Default Risk)
-
 ## バリデーション
 
+- すぐれたバリデーションを作ることがコンペの第一歩
 - KFold or Stratified
   - 多クラス分類ならstratified必須
   - 回帰でも1変数k-meansしてstratifiedにすることも
 - Adversarial Validationは検討したか？
+
+## 特徴量作成
+
+- ゼロかそれ以外か、0.5以上か、などの2値学習(tkmさん)
+- 予測値を特徴量に入れてもう一度学習する(Home Credit Default Risk)
 
 ## カテゴリ変数の取扱い
 
@@ -78,9 +79,9 @@
 ### LightGBM
 
 - `num_leaves`多め、`feature_fraction`かなり小さめ、とかもあり ([Avito 4th](https://www.kaggle.com/c/avito-demand-prediction/discussion/59881))
-- `feature_fraction = sqrt(n_features)/n_features` 程度だと特徴量数の影響を受けづらく、良い。
+- `feature_fraction = sqrt(n_features)/n_features` 程度だと特徴量数の影響を受けづらく、良い
 
 ## おまけ
 
-- (銅メダル圏内くらいのとき)終了直前で激強kernelが出現することがあるので、最終日は2サブミット残して7時に起床し、自分のsolutionとちゃちゃっとアンサンブルできる体制を整えておく。1サブ残しだと精神的にきついので、2サブ推奨。
-- 2値分類のコンペではkernel-bestのどこかの行を0にしたやつと1にしたやつを提出すると、カーネルパクリ軍団を抜かせることがある。
+- (銅メダル圏内くらいのとき)終了直前で激強kernelが出現することがあるので、最終日は2サブミット残して7時に起床し、自分のsolutionとちゃちゃっとアンサンブルできる体制を整えておく。1サブ残しだと精神的にきついので、2サブ推奨
+- 2値分類のコンペではkernel-bestのどこかの行を0にしたやつと1にしたやつを提出すると、カーネルパクリ軍団を抜かせることがある
