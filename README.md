@@ -14,6 +14,7 @@
 ## 特徴量作成
 
 - ゼロかそれ以外か、0.5以上か、などの2値学習(tkmさん)
+- 予測値を特徴量に入れてもう一度学習する(Home Credit Default Risk)
 
 ## バリデーション
 
@@ -61,6 +62,7 @@
 - Rankにしたり、何らかの分布に押し込めたあとaverageすると良いことがある
 - Stacking
 - Quiz Blending ([pdf](https://www.netflixprize.com/assets/GrandPrize2009_BPC_BigChaos.pdf))
+- 特徴量をbaggingしたモデルを大量につくってアンサンブル(Home Credit Default Risk)
 
 ## Deep Learning
 
