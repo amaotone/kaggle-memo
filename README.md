@@ -24,7 +24,7 @@
 ## 特徴量作成
 
 - ゼロかそれ以外か、0.5以上か、などの2値学習(tkmさん)
-- 予測値を特徴量に入れてもう一度学習する(Home Credit Default Risk)
+- 予測値を特徴量に入れてもう一度学習する(Home Credit)
 - メインcsvの1行に対し、サブcsvの複数行が対応しているような場合(Home Creditとか)
   - サブに時系列性があればカテゴリ変数は最後の値を取る、などが使える
   - 逆にサブにメインをマージして、サブだけで学習してみるのも手
@@ -32,7 +32,7 @@
 
 ## カテゴリ変数の取扱い
 
-- カテゴリの共起を取ってLDAする([Talkingdata 1st place solution](https://www.slideshare.net/TakanoriHayashi3/talkingdata-adtracking-fraud-detection-challenge-1st-place-solution))
+- カテゴリの共起を取ってLDAする([Talkingdata 1st](https://www.slideshare.net/TakanoriHayashi3/talkingdata-adtracking-fraud-detection-challenge-1st-place-solution))
 - Target-Encodingを考える
 - Weight of Evidence ([資料](https://github.com/h2oai/h2o-meetups/blob/master/2017_11_29_Feature_Engineering/Feature%20Engineering.pdf))
 - NNのEmbedding Layerに突っ込む
@@ -57,7 +57,7 @@
 - Rankにしたり、何らかの分布に押し込めたあとaverageすると良いことがある
 - Stacking
 - Quiz Blending ([pdf](https://www.netflixprize.com/assets/GrandPrize2009_BPC_BigChaos.pdf))
-- 特徴量をbaggingしたモデルを大量につくってアンサンブル(Home Credit Default Risk)
+- 特徴量をbaggingしたモデルを大量につくってアンサンブル(Home Credit)
 
 ## タスクの種類ごと
 
