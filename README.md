@@ -50,7 +50,7 @@
 - Rankにしたり、何らかの分布に押し込めたあとaverageすると良いことがある
 - Stacking
 - Quiz Blending ([pdf](https://www.netflixprize.com/assets/GrandPrize2009_BPC_BigChaos.pdf))
-- 特徴量をbaggingしたモデルを大量につくってアンサンブル(Home Credit Default Risk)\
+- 特徴量をbaggingしたモデルを大量につくってアンサンブル(Home Credit Default Risk)
 
 ## タスクの種類ごと
 
