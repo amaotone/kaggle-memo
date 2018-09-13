@@ -1,5 +1,7 @@
 # kaggle-memo
 
+まなびながら書き足していきます。
+
 ## 最初に読む
 
 - [bestfittingさんのインタビュー](http://blog.kaggle.com/2018/05/07/profiling-top-kagglers-bestfitting-currently-1-in-the-world/)
