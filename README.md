@@ -103,7 +103,10 @@
 
 ## ライブラリ
 
-- [eli5](https://eli5.readthedocs.io/en/latest/tutorials/index.html): デバッグと可視化。permutation importanceとかLIMEとか
+|ライブラリ名|内容|
+|:--|:--|
+|[eli5](https://eli5.readthedocs.io/en/latest/tutorials/index.html)|デバッグと可視化。permutation importanceとかLIMEとか|
+|[PDBBox](https://pdpbox.readthedocs.io/en/latest/)|partial dependency plotの作成|
 
 ## 参戦記
 
