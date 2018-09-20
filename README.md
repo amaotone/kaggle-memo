@@ -101,6 +101,10 @@
 - (銅メダル圏内くらいのとき)終了直前で激強kernelが出現することがあるので、最終日は2サブミット残して7時に起床し、自分のsolutionとちゃちゃっとアンサンブルできる体制を整えておく。1サブ残しだと精神的にきついので、2サブ推奨
 - 2値分類のコンペではkernel-bestのどこかの行を0にしたやつと1にしたやつを提出すると、カーネルパクリ軍団を抜かせることがある
 
+## ライブラリ
+
+- [eli5](https://eli5.readthedocs.io/en/latest/tutorials/index.html): デバッグと可視化。permutation importanceとかLIMEとか
+
 ## 参戦記
 
 - [Home Credit Default Risk](https://amalog.hateblo.jp/entry/kaggle-home-credit)
