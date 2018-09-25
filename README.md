@@ -20,6 +20,7 @@
   - 多クラス分類ならstratified必須
   - 回帰でも1変数k-meansしてstratifiedにすることも
 - Adversarial Validationは検討したか？
+- random seedを変えてどれくらいばらつくかで自分のバリデーションの精度を確認する(Jackさん)
 
 ## 特徴量作成
 
@@ -31,8 +32,6 @@
   - 先頭/末尾のn行で集約
 - 代表的な特徴量だけで計算したkNNで近傍500点のtargetの平均を特徴量として加える(Home Credit 1st)
   - 全変数でやるとnoisyだし、kNNは次元が増えてくると意味をなさなくなってくる
-  
-  
 
 ## カテゴリ変数の取扱い
 
@@ -47,6 +46,10 @@
 
 - [Fancy Impute](https://github.com/iskandr/fancyimpute)
 - [MIDAS](https://github.com/Oracen/MIDAS)
+
+## 特徴量選択
+
+- Ridgeなどにかけて1変数ずつ有効かどうか確認するstepwiseを行う。LightGBMなどでできたらそちらのほうが良いが、計算時間との相談。
 
 ## Representation Learning
 
