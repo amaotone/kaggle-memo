@@ -37,7 +37,8 @@
 
 - カテゴリの共起を取ってLDAする([Talkingdata 1st](https://www.slideshare.net/TakanoriHayashi3/talkingdata-adtracking-fraud-detection-challenge-1st-place-solution))
 - Target-Encodingを考える
-- Weight of Evidence ([資料](https://github.com/h2oai/h2o-meetups/blob/master/2017_11_29_Feature_Engineering/Feature%20Engineering.pdf))
+  - 必要ならTarget-Encodingのスムージングも検討する([参考](https://mikebird28.hatenablog.jp/entry/2018/06/14/172132))
+- Weight of Evidence ([参考](https://github.com/h2oai/h2o-meetups/blob/master/2017_11_29_Feature_Engineering/Feature%20Engineering.pdf))
 - NNのEmbedding Layerに突っ込む
   - cross validationしているとき、各foldでembeddingの実際の値が異なることには注意が必要。実際の値を特徴量にしてLightGBMにかける、とかは難しいかも。
 - カテゴリの表記ゆれなどがある場合はn-gramを取るなどして表記揺れをなくすとよい
@@ -94,6 +95,7 @@
 - [0, 1]のregressionならbinary-crossentropyで学習するのもあり (ynktkさん)
 - 連続変数をGaussRankで処理
 - 徐々に`batch_size`を大きくしていく ([Mercari 1st](https://www.kaggle.com/c/mercari-price-suggestion-challenge/discussion/50256))
+- AdamWとamsgradを使う([参考](http://www.fast.ai/2018/07/02/adam-weight-decay/))
 
 ### LightGBM
 
@@ -122,3 +124,9 @@
 ## 参戦記
 
 - [Home Credit Default Risk](https://amalog.hateblo.jp/entry/kaggle-home-credit)
+
+## リンク集
+
+- [Kaggle Tokyo Meetup #4 の資料](https://connpass.com/event/82458/presentation/)
+- [Kaggle Tokyo Meetup #3](https://connpass.com/event/66431/)
+
