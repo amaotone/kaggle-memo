@@ -128,6 +128,7 @@
 
 ## リンク集
 
+- [Kaggle Tokyo Meetup #5](https://connpass.com/event/105298/)
 - [Kaggle Tokyo Meetup #4 の資料](https://connpass.com/event/82458/presentation/)
 - [Kaggle Tokyo Meetup #3](https://connpass.com/event/66431/)
 
