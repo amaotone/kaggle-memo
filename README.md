@@ -83,11 +83,13 @@
 - imagemagickのidentify --verboseで統計量が出る (tkmさん)
 - 画像の動きが欲しい場合はOpenCVのoptical flowを取る (osciiartさん)
 
-### 自然言語
+### 自然言語処理
 
 - 商品カテゴリなどがいくつかのフィールドに分かれているときはすべてくっつけて文章として扱う
 - Tfidf+fastTextで強い特徴になるが、fastTextに偏りがちなのでfraction強めにいれると良いらしい ([nerdtreeさん](https://twitter.com/nardtree/status/994579698553311233?s=12))
 - fastTextをがっつりPCAなどで次元削減してTfidfと合わせる ([nerdtreeさん](https://twitter.com/nardtree/status/995963496322945025))
+- 翻訳→再翻訳してTTAするのは有効 (toxic commentで多く使われた)
+- 文章ユニークの単語の割合やすべて大文字の割合をモデルの後半でconcatする(Toxic Comment 3rd)
 
 ## 手法ごと
 
