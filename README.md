@@ -85,9 +85,24 @@
 
 ### 自然言語処理
 
+#### 前処理
+
+- [Googleが指定する有害単語](https://github.com/RobertJGabriel/Google-profanity-words/blob/master/list.txt)
+- BeautifulSoupでHTMLタグを消す
+- unicodedataライブラリでアクセントを消す
+- 省略形を元に戻す(don't -> do notなど)
+- シンボルなどを消す
+- stemmingやlemmatizationを行う
+- stopwordを消す(消すなという意見もあるのでよくわからん)
+
+#### 特徴量
+
 - 商品カテゴリなどがいくつかのフィールドに分かれているときはすべてくっつけて文章として扱う
 - Tfidf+fastTextで強い特徴になるが、fastTextに偏りがちなのでfraction強めにいれると良いらしい ([nerdtreeさん](https://twitter.com/nardtree/status/994579698553311233?s=12))
 - fastTextをがっつりPCAなどで次元削減してTfidfと合わせる ([nerdtreeさん](https://twitter.com/nardtree/status/995963496322945025))
+
+#### モデル・学習など
+
 - 翻訳→再翻訳してTTAするのは有効 (toxic commentで多く使われた)
 - 文章ユニークの単語の割合やすべて大文字の割合をモデルの後半でconcatする(Toxic Comment 3rd)
 
