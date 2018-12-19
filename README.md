@@ -1,6 +1,6 @@
-# kaggle-memo
+# Kaggle Memo
 
-まなびながら書き足していきます。
+Author: Amane Suzuki
 
 ## 最初に読む
 
@@ -10,9 +10,9 @@
 
 ## EDA
 
-- ヒストグラムにして満足してないか？
-- 意味のある順序にソートしてから眺める
+- 時系列性がある場合などは特に、意味のある順序にソートしてから眺める
 - ランダムにサンプリングしてcsvに吐き、Excelで眺める
+- 各列の意味を和訳しながらデータを眺める。その過程でいろいろ気づくことがあるので、メモしておく
 
 ## バリデーション
 
@@ -87,7 +87,6 @@
 
 #### 前処理
 
-- [Googleが指定する有害単語](https://github.com/RobertJGabriel/Google-profanity-words/blob/master/list.txt)
 - BeautifulSoupでHTMLタグを消す
 - unicodedataライブラリでアクセントを消す
 - 省略形を元に戻す(don't -> do notなど)
@@ -105,6 +104,10 @@
 
 - 翻訳→再翻訳してTTAするのは有効 (toxic commentで多く使われた)
 - 文章ユニークの単語の割合やすべて大文字の割合をモデルの後半でconcatする(Toxic Comment 3rd)
+
+#### その他
+
+- [Googleが指定する有害単語リスト](https://github.com/RobertJGabriel/Google-profanity-words/blob/master/list.txt)
 
 ## 手法ごと
 
