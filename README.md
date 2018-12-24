@@ -96,6 +96,7 @@ Author: Amane Suzuki
 
 #### 特徴量
 
+- textblobライブラリでpolarity(ネガポジ)やsubjectivity(主観性)判定が簡単にできる([src](https://medium.com/@rahulvaish/textblob-and-sentiment-analysis-python-a687e9fabe96))
 - 商品カテゴリなどがいくつかのフィールドに分かれているときはすべてくっつけて文章として扱う
 - Tfidf+fastTextで強い特徴になるが、fastTextに偏りがちなのでfraction強めにいれると良いらしい ([nerdtreeさん](https://twitter.com/nardtree/status/994579698553311233?s=12))
 - fastTextをがっつりPCAなどで次元削減してTfidfと合わせる ([nerdtreeさん](https://twitter.com/nardtree/status/995963496322945025))
