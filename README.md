@@ -103,6 +103,7 @@ Author: Amane Suzuki
 
 #### モデル・学習など
 
+- Pretrained Embeddingは横に結合したり、平均をとったりして用いる
 - 翻訳→再翻訳してTTAするのは有効 (toxic commentで多く使われた)
 - 文章ユニークの単語の割合やすべて大文字の割合をモデルの後半でconcatする(Toxic Comment 3rd)
 
