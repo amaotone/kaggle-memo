@@ -143,6 +143,7 @@ Author: Amane Suzuki
 |:--|:--|
 |[eli5](https://eli5.readthedocs.io/en/latest/tutorials/index.html)|デバッグと可視化。permutation importanceとかLIMEとか|
 |[PDPBox](https://pdpbox.readthedocs.io/en/latest/)|partial dependency plotの作成|
+|[albumentation](https://github.com/albu/albumentations)|画像のaugmentation|
 
 ## 参戦記
 
