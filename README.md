@@ -2,7 +2,7 @@
 
 Author: Amane Suzuki
 
-個人的に学んだことをメモしておく場所です。Kaggleを始めたいという方は[Getting Started](https://github.com/amaotone/kaggle-memo/edit/master/getting_started.md)も参考にしてみてください。
+個人的に学んだことをメモしておく場所です。Kaggleを始めたいという方は[Getting Started](https://github.com/amaotone/kaggle-memo/blob/master/getting_started.md)も参考にしてみてください。
 
 ## 多くの人に役立ちそうなリンク
 
