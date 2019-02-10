@@ -1,7 +1,5 @@
 # Kaggle Memo
 
-Author: Amane Suzuki
-
 個人的に学んだことをメモしておく場所です。Kaggleを始めたいという方は[Getting Started](https://github.com/amaotone/kaggle-memo/blob/master/getting_started.md)も参考にしてみてください。
 
 ## 多くの人に役立ちそうなリンク
@@ -157,3 +155,8 @@ Author: Amane Suzuki
 - [Kaggle Tokyo Meetup #4 の資料](https://connpass.com/event/82458/presentation/)
 - [Kaggle Tokyo Meetup #3](https://connpass.com/event/66431/)
 
+## 書いている人
+
+- Amane Suzuki
+- twitter: [@SakuEji](https://twitter.com/SakuEji)
+- kaggle: [@amaotone](https://www.kaggle.com/amaotone)
