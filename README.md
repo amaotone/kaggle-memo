@@ -2,7 +2,9 @@
 
 Author: Amane Suzuki
 
-## 最初に読む
+個人的に学んだことをメモしておく場所です。Kaggleを始めたいという方は[Getting Started](https://github.com/amaotone/kaggle-memo/edit/master/getting_started.md)も参考にしてみてください。
+
+## 多くの人に役立ちそうなリンク
 
 - [bestfittingさんのインタビュー](http://blog.kaggle.com/2018/05/07/profiling-top-kagglers-bestfitting-currently-1-in-the-world/)
 - [HF van Veenさんの特徴量作成スライド](https://www.slideshare.net/HJvanVeen/feature-engineering-72376750)
