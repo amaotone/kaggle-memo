@@ -100,12 +100,13 @@
 - 商品カテゴリなどがいくつかのフィールドに分かれているときはすべてくっつけて文章として扱う
 - Tfidf+fastTextで強い特徴になるが、fastTextに偏りがちなのでfraction強めにいれると良いらしい ([nerdtreeさん](https://twitter.com/nardtree/status/994579698553311233?s=12))
 - fastTextをがっつりPCAなどで次元削減してTfidfと合わせる ([nerdtreeさん](https://twitter.com/nardtree/status/995963496322945025))
-
-#### モデル・学習など
-
-- Pretrained Embeddingは横に結合したり、平均をとったりして用いる
 - 翻訳→再翻訳してTTAするのは有効 (toxic commentで多く使われた)
 - 文章ユニークの単語の割合やすべて大文字の割合をモデルの後半でconcatする(Toxic Comment 3rd)
+
+#### Pretrained Embeddingについて
+
+- pretrained embeddingは横に結合したり、平均をとったりして用いる
+- pretrained embeddingを使う場合、語彙ができるだけ多くpretrained embeddingに含まれていることが大事。大文字にしたり小文字にしたり、stemmingを行ったりして、できるだけたくさんの単語に対して学習済みベクトルを割り当てるのが大切([Quora 3rd](https://www.kaggle.com/wowfattie/3rd-place))
 
 #### その他
 
@@ -119,6 +120,7 @@
 - 連続変数をGaussRankで処理
 - 徐々に`batch_size`を大きくしていく ([Mercari 1st](https://www.kaggle.com/c/mercari-price-suggestion-challenge/discussion/50256))
 - AdamWとamsgradを使う([参考](http://www.fast.ai/2018/07/02/adam-weight-decay/))
+- Kernel Onlyコンペなど、実行時間制限があって多くのモデルのアンサンブルを行えない状況ではSnapshot Ensembleを検討する。
 
 ### LightGBM
 
