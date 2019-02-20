@@ -108,6 +108,9 @@
 
 - pretrained embeddingは横に結合したり、平均をとったりして用いる
 - pretrained embeddingを使う場合、語彙ができるだけ多くpretrained embeddingに含まれていることが大事。大文字にしたり小文字にしたり、stemmingを行ったりして、できるだけたくさんの単語に対して学習済みベクトルを割り当てるのが大切([Quora 3rd](https://www.kaggle.com/wowfattie/3rd-place))
+- スペル訂正をするときは編集距離1の単語を探すと良い
+- Projection Meta Embedding(PME)を検討する
+  - 各学習済みの重みをconcatし、Dense+ReLUで低次元に写像してEmbeddingのように使う。
 
 #### その他
 
@@ -122,11 +125,19 @@
 - 徐々に`batch_size`を大きくしていく ([Mercari 1st](https://www.kaggle.com/c/mercari-price-suggestion-challenge/discussion/50256))
 - AdamWとamsgradを使う([参考](http://www.fast.ai/2018/07/02/adam-weight-decay/))
 - Kernel Onlyコンペなど、実行時間制限があって多くのモデルのアンサンブルを行えない状況ではSnapshot Ensembleを検討する。
+- 自然言語処理において、各バッチごとに系列長を決めることで学習の効率化が可能
+  - 系列長の設定はバッチごとの最長でもいいが、95%点などを利用するのも良い(Quora 1st)
 
 ### LightGBM
 
 - `num_leaves`多め、`feature_fraction`かなり小さめ、とかもあり ([Avito 4th](https://www.kaggle.com/c/avito-demand-prediction/discussion/59881))
 - `feature_fraction = sqrt(n_features)/n_features` 程度だと特徴量数の影響を受けづらく、良い
+
+## Kernel Only / 2-stage制 について
+
+- 当たり前だが、Kernel Onlyコンペだからといって全ての作業をKernelでやらなければいけないわけではない。パラメータチューニングなどはローカルでやり、良いものをKernelに載せる
+- 2nd-stageに進むことが一番大切。Kernelがメモリ不足で落ちたり、実行時間制限にかかったりしないように心がける
+  - 学習を高速化するテクニックを使うのはもちろんのこと、余計なデータの書き出しなどで時間を使わないこと
 
 ## チームで動くときのノウハウ
 
@@ -148,11 +159,15 @@
 |[PDPBox](https://pdpbox.readthedocs.io/en/latest/)|partial dependency plotの作成|
 |[albumentation](https://github.com/albu/albumentations)|画像のaugmentation|
 
-## 参戦記
-
-- [Home Credit Default Risk](https://amalog.hateblo.jp/entry/kaggle-home-credit)
 
 ## リンク集
+
+### 参戦記
+
+- [Quora Insincere Questions Classification](https://amalog.hateblo.jp/entry/quora-insincere-questions-classification)
+- [Home Credit Default Risk](https://amalog.hateblo.jp/entry/kaggle-home-credit)
+
+### Kaggle Meetup
 
 - [Kaggle Tokyo Meetup #5 の資料](https://connpass.com/event/105298/presentation/)
 - [Kaggle Tokyo Meetup #4 の資料](https://connpass.com/event/82458/presentation/)
