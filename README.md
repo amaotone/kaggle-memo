@@ -99,8 +99,8 @@
 
 - textblobライブラリでpolarity(ネガポジ)やsubjectivity(主観性)判定が簡単にできる([src](https://medium.com/@rahulvaish/textblob-and-sentiment-analysis-python-a687e9fabe96))
 - 商品カテゴリなどがいくつかのフィールドに分かれているときはすべてくっつけて文章として扱う
-- Tfidf+fastTextで強い特徴になるが、fastTextに偏りがちなのでfraction強めにいれると良いらしい ([nerdtreeさん](https://twitter.com/nardtree/status/994579698553311233?s=12))
-- fastTextをがっつりPCAなどで次元削減してTfidfと合わせる ([nerdtreeさん](https://twitter.com/nardtree/status/995963496322945025))
+- Tfidf+fastTextで強い特徴になるが、fastTextに偏りがちなのでfraction強めにいれると良いらしい ([nardtreeさん](https://twitter.com/nardtree/status/994579698553311233?s=12))
+- fastTextをがっつりPCAなどで次元削減してTfidfと合わせる ([nardtreeさん](https://twitter.com/nardtree/status/995963496322945025))
 - 翻訳→再翻訳してTTAするのは有効 (toxic commentで多く使われた)
 - 文章ユニークの単語の割合やすべて大文字の割合をモデルの後半でconcatする(Toxic Comment 3rd)
 
